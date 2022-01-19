@@ -6,8 +6,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class World {
+
+
     private int height;
     private int width;
+
+    public int getWidth() {
+        return width;
+    }
+    public int getHeight() {
+        return height;
+    }
+
     private List<Character> characters = new ArrayList<>();
 
     public World(int height, int width) {
@@ -33,7 +43,7 @@ public class World {
                     symbol = ' ';
                 }
                 for (Character p: characters) {
-                    if (p.getyCoord()== y && p.getxCoord() ==x)
+                    if (p.getyCoord()== y && p.getxCoord() ==x && p.isVisible())
                     symbol = p.getSymbol();
                 }
                 System.out.print(symbol);
