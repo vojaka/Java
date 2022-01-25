@@ -21,7 +21,7 @@ public class World {
     private List<Character> characters = new ArrayList<>();
 
     public World(int height, int width) {
-        System.out.println("loodi uus maailm");
+        System.out.println("new world");
         this.height = height;
         this.width = width;
     }
@@ -31,7 +31,7 @@ public class World {
     }
 
     public void printMap() {
-        System.out.println("kutsuti v'lja");
+        System.out.println("World Print");
         char symbol;
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
